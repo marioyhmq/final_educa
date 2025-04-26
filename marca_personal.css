@@ -1,0 +1,106 @@
+.marca-importancia {
+    background-color: #f9f9f9;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .marca-importancia h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .marca-importancia h2 span {
+    color: #7a00cc;
+  }
+  
+  .importancia-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .importancia-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .importancia-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  }
+  
+  .importancia-card i {
+    font-size: 2.5rem;
+    color: #7a00cc;
+    margin-bottom: 1rem;
+  }
+  
+  .importancia-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .importancia-card p {
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+
+
+  .faq-cards-section {
+    padding: 4rem 1rem;
+    background-color: #f2f2ff;
+    text-align: center;
+  }
+  
+  .faq-titulo {
+    font-size: 2rem;
+    color: #7a00cc;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .faq-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+  }
+  
+  .faq-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .faq-card-icon {
+    font-size: 1.5rem;
+    color: #7a00cc;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .faq-card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  

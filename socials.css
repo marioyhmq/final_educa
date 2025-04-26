@@ -1,0 +1,89 @@
+/* Botón flotante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: white;
+    font-size: 28px;
+    padding: 14px 16px;
+    border-radius: 50%;
+    z-index: 9999;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+  }
+  
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Chat box */
+  .wa-chat {
+    position: fixed;
+    bottom: 95px;
+    right: 25px;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 9998;
+    overflow: hidden;
+  }
+  
+  .wa-header {
+    background-color: #075e54;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+  .wa-body {
+    padding: 10px;
+    height: 180px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    background: #f5f5f5;
+  }
+  
+  .wa-msg {
+    margin-bottom: 8px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    max-width: 90%;
+  }
+  
+  .wa-msg.bot {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+  }
+  
+  .wa-msg.user {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+  }
+  
+  .wa-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+  
+  .wa-input input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+  }
+  
+  .wa-input button {
+    background: #25d366;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,1288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow-x: hidden;
+}
+header {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: none;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+#logo {
+  width: 60px;
+  border-radius: 50%;
+}
+.botonera ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.botonera a {
+  text-decoration: none;
+  color: rgb(254, 254, 255);
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  /* text-shadow: 0 0 5px #b1ec0c, 0 0 10px #b0df31, 0 0 15px #d7f916; */
+  font-size: 20px;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #333;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown > a::after {
+  content: " ▾";
+  font-size: 0.8em;
+}
+#btn-menu {
+  display: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  #btn-menu {
+    display: block;
+  }
+  .botonera {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: left 0.3s ease;
+  }
+  .botonera.click {
+    left: 0;
+  }
+  .botonera ul {
+    flex-direction: column;
+    padding: 1rem 0;
+    align-items: center;
+  }
+  .dropdown-content {
+    position: relative;
+    background-color: #222;
+  }
+  .dropdown-content a {
+    color: #fff;
+  }
+}
+
+.logo-container a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.logo-container a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0px 7px 21px rgba(187, 91, 187));
+  animation: rotar 5s linear infinite;
+}
+@keyframes rotar {
+  0% {
+    transform: rotateY(-180deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+.logo-container span{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(0.4);
+}
+
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 90%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.slide-content .button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-content button {
+  background-color: #25D366;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  filter: drop-shadow(0px 7px 21px rgba(187, 91, 187));
+  transition: background-color 0.3s ease;
+}
+
+.slide-content button:hover {
+  background-color: #e6e219;
+  color: black;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+}
+
+.slider-arrow.left {
+  left: 10px;
+}
+
+.slider-arrow.right {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .slide-content {
+    padding: 1rem;
+  }
+
+  .slide-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .slide-content .button-group {
+    flex-direction: column;
+  }
+
+  .slide-content button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    margin: 0.3rem 0;
+  }
+}
+
+.redes {
+  width: 100%;
+  background-color: #fff;
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.social-langer {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.social-wrappee {
+  display: flex;
+  width: max-content;
+  gap: 2rem;
+  animation: scroll-left 40s linear infinite;
+  will-change: transform;
+}
+
+.social-wrappee img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.social-wrappee img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .social-wrappee img {
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-wrappee img {
+    height: 35px;
+    gap: 1rem;
+  }
+}
+
+/*malla curriculicular */
+.btn-descargar {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #6A00F4;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.btn-descargar:hover {
+  background-color: #4800a8;
+}
+
+
+
+/* secciones adicionales */
+.quienes-somos {
+  position: relative;
+  padding: 6rem 4rem;
+  background-image: url('https://online.univa.mx/hubfs/por-que-es-importante-el-marketing-empresarial.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+}
+.quienes-somos p{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 70rem;
+  text-align: justify;
+  text-indent: 1rem;
+  margin-bottom: 2rem;
+}
+.quienes-somos::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* <-- Ajusta la oscuridad aquí */
+  z-index: 0;
+}
+.quienes-somos > * {
+  position: relative;
+  z-index: 1;
+}
+.ventajas-educaperu {
+  padding: 4rem 2rem;
+  background-color: #f4f4f8;
+  color: #120B2A;
+}
+.quienes-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.quienes-texto {
+  flex: 1 1 350px;
+}
+.quienes-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #c80af8;
+}
+.quienes-texto p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.ventajas-educaperu h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #6A00F4;
+}
+.ventajas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.ventaja-item {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.ventaja-item:hover {
+  transform: translateY(-10px);
+}
+.ventaja-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.ventaja-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #6A00F4;
+}
+.ventaja-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .quienes-contenido, .ventajas-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.btn-descargar:hover {
+  background-color: #c80af8;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ajustes responsivos para .ventajas-educaperu */
+@media (max-width: 768px) {
+  .ventajas-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ventaja-item {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .ventaja-item img {
+    height: 150px;
+  }
+
+  .ventajas-educaperu h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.terciarizacion {
+  background: #f4f4f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+.terciarizacion .titulo {
+  font-size: 2rem;
+  color: #410f5a;
+  margin-bottom: 15px;
+}
+.terciarizacion .descripcion {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: #333;
+}
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  background: white;
+  padding: 25px;
+  width: 270px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.card .icono {
+  font-size: 2.5rem;
+  color: #7c3aed;
+  margin-bottom: 15px;
+}
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+.card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+/* carrusel */
+
+.slider-section {
+  padding: 2rem 1rem;
+  background-color: #fef8ff;
+  overflow: hidden;
+}
+
+.slider-title {
+  text-align: center;
+  color: #5d009b;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.slider-card {
+  flex: 0 0 auto;
+  width: 180px;
+  margin-right: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.slider-card:hover {
+  transform: scale(1.07);
+}
+
+.slider-card i {
+  font-size: 2.2rem;
+  color: #7900c2;
+  margin-bottom: 0.6rem;
+}
+
+.slider-card p {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.blog-section {
+  padding: 3rem 1rem;
+  background-color: #fefefe;
+}
+
+.blog-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #5d009b;
+  margin-bottom: 2rem;
+}
+
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 1rem;
+}
+
+.blog-content time {
+  display: block;
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.blog-content h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.blog-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.blog-content a {
+  font-weight: bold;
+  color: #d6004c;
+  text-decoration: none;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  animation: bounce 2s infinite ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.btn-wsp i {
+  line-height: 60px;
+}
+
+.btn-wsp:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5d;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.galeria {
+  padding: 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.galeria-titulo {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #3e0079;
+}
+
+.galeria-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.galeria-grid img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.modal-contenido {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  animation: zoom 0.4s ease;
+}
+
+@keyframes zoom {
+  from { transform: scale(0.5); }
+  to { transform: scale(1); }
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.modulos-section {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.modulos-titulo {
+  font-size: 2.2rem;
+  color: #4b0082;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.modulos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.modulo-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modulo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.modulo-card h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modulo-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+/* beneficios de capacitarse */
+.beneficios {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.beneficios__titulo {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.beneficios__subtitulo {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.beneficios__contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.beneficio__card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 240px;
+  transition: transform 0.3s ease;
+}
+
+.beneficio__card:hover {
+  transform: translateY(-5px);
+}
+
+.beneficio__card i {
+  font-size: 40px;
+  color: #6A0DAD; /* morado EducaPeru */
+  margin-bottom: 1rem;
+}
+
+
+/* TALLER */
+.section-taller {
+  padding: 3rem 1rem;
+  background: #fff;
+  border-radius: 30px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.taller-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.taller-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.taller-info {
+  max-width: 500px;
+}
+.taller-info h2 {
+  font-size: 1.8rem;
+  color: #dc143c;
+  margin-bottom: 1rem;
+}
+.resaltado {
+  font-weight: bold;
+  color: #facc15;
+}
+.taller-info ul {
+  padding-left: 1rem;
+  list-style: disc;
+}
+.taller-info li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.btn-taller {
+  display: inline-block;
+  background: #dc143c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn-taller:hover {
+  background: #a30f2a;
+}
+.valores {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: #f3f3f3;
+  flex-wrap: wrap;
+}
+
+.valor-card {
+  flex: 1 1 300px;
+  background: #120B2A;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  color: white;
+}
+
+.valor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.icono-valor {
+  font-size: 3rem;
+  color: #b16efb;
+  margin-bottom: 1rem;
+}
+
+.valor-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.valor-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+/* parallax */
+.valores-parallax {
+  position: relative;
+  background-image: url('../assets/prox-1.jpg'); /* Cambia por tu imagen */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 6rem 2rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.valores-parallax .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.valores-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.valores-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.valores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.valor-item {
+  flex: 1 1 300px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.valor-icono {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #b16efb;
+}
+
+.valor-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Animación */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.8) translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.zoom-in.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+.contacto {
+  background-color: #fefefe;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2.5rem;
+  color: #4b0082;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.contenido-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.info-contacto {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.info-contacto p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.info-contacto i {
+  margin-right: 10px;
+  color: #4b0082;
+}
+
+.formulario-contacto {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.formulario-contacto button {
+  padding: 12px;
+  border: none;
+  background-color: #4b0082;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #6c0db4;
+}
+
+.mapa {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.evento-finalizado {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.evento-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.evento-imagen img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.evento-info {
+  flex: 1;
+}
+
+.evento-info h2 {
+  font-size: 2rem;
+  color: #4b0082;
+  margin-bottom: 1rem;
+}
+
+.evento-descripcion {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.evento-fechas {
+  list-style: none;
+  padding: 0;
+}
+
+.evento-fechas li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+/*negocios ganadores  */
+
+.curso-destacado {
+  padding: 60px 20px;
+  background: #fdfdfd;
+  animation: slideInRight 0.8s ease-in-out;
+}
+
+.curso-contenido {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.curso-imagen img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.curso-detalles {
+  flex: 1;
+  padding: 10px;
+}
+
+.curso-detalles h2 {
+  font-size: 2.5rem;
+  color: #4b0082;
+  margin-bottom: 1rem;
+}
+
+.curso-descripcion {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.btn-inscribete {
+  background-color: #4b0082;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-inscribete:hover {
+  background-color: #6f00b8;
+}
+/*negocios galeria */
+
+.galeria-frases {
+  padding: 50px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.galeria-frases h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #4b0082;
+}
+
+.contenedor-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.imagen {
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.imagen:hover {
+  transform: scale(1.05);
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-contenido {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  animation: zoom 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}

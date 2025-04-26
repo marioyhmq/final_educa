@@ -1,0 +1,266 @@
+ 
+/* inicio */
+
+  .presentacion {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .presentacion-contenido {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .presentacion-imagen img {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+  
+  .presentacion-texto {
+    flex: 1;
+  }
+  
+  .presentacion-texto h2 {
+    font-size: 2rem;
+    color: #3d2b56;
+    margin-bottom: 1rem;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .presentacion-texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  .scroll-fade {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .scroll-fade.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .presentacion-contenido {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .presentacion-imagen img {
+      width: 80%;
+      max-width: 280px;
+    }
+  
+    .presentacion-texto h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  .caracteristicas {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background-color: #f5f9f9;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .caracteristica {
+    flex: 1 1 280px;
+    max-width: 300px;
+    transition: transform 0.4s ease;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  }
+  
+  .caracteristica:hover {
+    transform: translateY(-10px);
+  }
+  
+  .icono {
+    font-size: 2.5rem;
+    color: #5b2d90;
+    margin-bottom: 1rem;
+  }
+  
+  .caracteristica h3 {
+    font-size: 1.2rem;
+    color: #391f73;
+    margin-bottom: 0.5rem;
+  }
+  
+  .caracteristica p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+/* ------------------------ */
+.servicios {
+  background: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.servicios-titulo {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #2c2355;
+}
+
+.servicios-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.servicio-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  max-width: 320px;
+  flex: 1 1 280px;
+  transition: transform 0.3s ease;
+}
+
+.servicio-card:hover {
+  transform: translateY(-8px);
+}
+
+.icono-servicio {
+  font-size: 2.5rem;
+  color: #7d3cff;
+  margin-bottom: 1rem;
+}
+
+.servicio-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.servicio-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Animación de scroll */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.scroll-fade.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .servicio-card {
+    max-width: 90%;
+  }
+}
+/* porque elegirnos */
+
+.elegirnos {
+  background: #f3f3f3;
+  padding: 60px 20px;
+}
+
+.elegirnos-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.elegirnos-imagen img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.elegirnos-texto {
+  flex: 1;
+}
+
+.elegirnos-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c2355;
+}
+
+.elegirnos-texto p {
+  font-size: 1.1rem;
+  color: #444;
+  min-height: 100px;
+  transition: opacity 0.5s ease;
+}
+
+.elegirnos-botones {
+  margin-top: 1rem;
+}
+
+.boton-cambio {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boton-cambio.active {
+  background-color: #7d3cff;
+}
+.elegirnos-video video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  height: auto;
+}
+
+.elegirnos-video {
+  flex: 1 1 400px;
+  max-width: 400px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .elegirnos-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .elegirnos-video video {
+    max-width: 90%;
+  }
+}
+
+
+

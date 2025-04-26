@@ -1,0 +1,345 @@
+.seccion-servicios-iconos {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .titulo-seccion {
+    font-size: 2.2rem;
+    color: #2e1065;
+    margin-bottom: 40px;
+  }
+  
+  .iconos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .icono-box {
+    background: white;
+    border-radius: 15px;
+    padding: 25px 10px;
+    width: 120px;
+    min-height: 120px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    animation: fadeInUp 0.8s ease forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .icono-box i {
+    font-size: 2.5rem;
+    color: #6b21a8;
+    margin-bottom: 10px;
+  }
+  
+  .icono-box p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #333;
+    word-wrap: break-word;
+    line-height: 1.2;
+  }
+  .icono-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    .icono-box {
+      width: 100px;
+      padding: 20px;
+    }
+  
+    .icono-box i {
+      font-size: 2rem;
+    }
+  
+    .titulo-seccion {
+      font-size: 1.6rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .icono-box {
+      width: 100px;
+      min-height: 110px;
+      padding: 15px 8px;
+    }
+  
+    .icono-box i {
+      font-size: 1.8rem;
+    }
+  
+    .icono-box p {
+      font-size: 0.75rem;
+    }
+  }
+  .beneficios-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  .beneficios-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #5e2b97;
+    text-align: center;
+  }
+
+  .beneficios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .beneficio {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .beneficio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
+
+  .beneficio i {
+    font-size: 2.5rem;
+    color: #5e2b97;
+    margin-bottom: 15px;
+  }
+
+  .beneficio h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .beneficio p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 600px) {
+    .beneficio {
+      width: 100%;
+    }
+  }
+
+  .estadisticas-section {
+    background-color: #f9f9ff;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .estadisticas-titulo {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #3f0071;
+    font-weight: bold;
+  }
+  
+  .estadisticas-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .estadistica {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .estadistica:hover {
+    transform: scale(1.05);
+  }
+  
+  .estadistica-numero {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6900c7;
+  }
+  
+  .estadistica-descripcion {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+
+  .contact-section {
+    background-image: url('/assets/seguros.png'); /* Reemplaza con tu imagen */
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  .contact-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .contact-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .contact-desc {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact-btn {
+    display: inline-block;
+    background-color: white;
+    color: #e639e6;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, background 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background-color: #251292;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* ultima seccion */
+
+  .tools-section {
+    background: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .tools-title .subtitle {
+    color: #d90429;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  
+  .tools-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .tools-title .description {
+    font-size: 1rem;
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .tool-box {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    width: 270px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s;
+  }
+  
+  .tool-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tool-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: #eee;
+    padding: 10px;
+  }
+  
+  .tool-box h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .tool-box p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  .scroll-hidden {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease;
+  }
+  .scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 768px) {
+    .tool-box {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educaperu</title>
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/servicios-general.css">
+  <link rel="stylesheet" href="./css/style-services.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/gestion.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/btn-wsap.css">
+  <link rel="shortcut icon" href="./assets/log.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <script async src="https://kit.fontawesome.com/567102f065.js" crossorigin="anonymous"></script>
+</head>
+<body data-servicio="Gestion">
+  <header>
+    <div class="container">
+
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="assets/logo.png" alt="" id="logo">
+        <span>Educaperu</span>
+        </a>
+      </div>
+
+
+      <div id="btn-menu" onclick="llamar()">
+        <label class="fa-solid fa-bars" id="menu"></label>
+      </div>
+      <nav class="botonera" id="botonera">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="Gestion.html">Servicios</a>
+            <div class="dropdown-content">
+              <a href="Gestion.html">Gestión Empresarial</a>
+              <a href="./capacitacion.html">Capacitación Profesional</a>
+              <a href="./MarcaPersonal.html">Marca Personal</a>
+              <a href="./marketing.html">Marketing Digital</a>
+              <a href="./terciarizacion.html">Terciarización Estratégica</a>
+            </div>
+          </li>
+          <li><a href="./clientes.html">Clientes</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slider -->
+  <div class="slider">
+    <button class="slider-arrow left" onclick="prevSlide()">&#10094;</button>
+    <div class="slides" id="slides">
+
+      <div class="slide">
+        <img src="assets/slide1.jpeg" alt="Slide 1">
+        <div class="slide-content">
+          <h2>Mejoramos Tu Gestión Empresarial</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide4.jpeg" alt="Slide 2">
+        <div class="slide-content">
+          <h2>Capacitación Profesional</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide3.jpeg" alt="Slide 3">
+        <div class="slide-content">
+          <h2>Potenciamos Tu Marca Personal</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWVy2T2ZUQNLgDJVRXwOLq9pRqab5GXR9BMw&s" alt="Slide 4">
+        <div class="slide-content">
+          <h2>Especialistas en Marketing Digital</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbrq78uWnuMb0rDgj38RM2PKeWoqHOAcHLw&s" alt="Slide 5">
+        <div class="slide-content">
+          <h2>Terciarización Estratégica</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="slider-arrow right" onclick="nextSlide()">&#10095;</button>
+  </div>
+  <!-- wsap -->
+<!-- Botón flotante de WhatsApp con animación -->
+<a href="https://wa.me/51995619930" class="btn-wsp" target="_blank" aria-label="Habla con nosotros por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Inicio -->
+<div class="redes">
+  <section class="social-langer">
+    <div class="social-wrappee" id="slider-track">
+      <img src="assets/banner-1.png" alt="banner">
+      <img src="assets/banner-2.png" alt="banner">
+      <img src="assets/banner-3.png" alt="banner">
+      <img src="assets/banner-4.png" alt="banner">
+      <img src="assets/banner-5.png" alt="banner">
+      <img src="assets/banner-6.png" alt="banner">
+      <img src="assets/banner-7.png" alt="banner">
+      <img src="assets/banner-8.png" alt="banner">
+      <img src="assets/banner-9.png" alt="banner">
+      <img src="assets/banner-10.png" alt="banner">
+      <img src="assets/banner-1.png" alt="banner">
+      <img src="assets/banner-2.png" alt="banner">
+      <img src="assets/banner-3.png" alt="banner">
+      <img src="assets/banner-4.png" alt="banner">
+      <img src="assets/banner-5.png" alt="banner">
+      <img src="assets/banner-6.png" alt="banner">
+      <img src="assets/banner-7.png" alt="banner">
+      <img src="assets/banner-8.png" alt="banner">
+      <img src="assets/banner-9.png" alt="banner">
+      <img src="assets/banner-10.png" alt="banner">
+    </div>
+  </section>
+</div>
+<!-- servicios -->
+<section class="servicios" id="servicios">
+    <h2>Servicios que ofrecemos</h2>
+    <div class="servicios-grid">
+      <a href="./Gestion.html" class="servicio-card active" data-id="1">
+        <i class="icono" data-feather="trending-up"></i>
+        <p>Gestion  <br> Empresarial</p>
+      </a>
+      <a href="./capacitacion.html" class="servicio-card" data-id="2">
+        <i class="icono" data-feather="search"></i>
+        <p>Capacitacion <br> Profesional</p>
+      </a>
+      <a href="./MarcaPersonal.html" class="servicio-card" data-id="3">
+        <i class="icono" data-feather="instagram"></i>
+        <p>Marca <br> Personal</p>
+      </a>
+      <a href="./marketing.html" class="servicio-card " data-id="4">
+        <i class="icono" data-feather="users"></i>
+        <p>Marketing <br> Digital</p>
+      </a>
+      <a href="./terciarizacion.html" class="servicio-card " data-id="5">
+        <i class="icono" data-feather="globe"></i>
+        <p>Terciarizacion <br> estrategica</p>
+      </a>
+    </div>
+  </section>
+  
+  <section class="gestion-box" id="gestion-box">
+    <div class="imagen-gestion">
+      <img id="gestion-imagen" src="" alt="Gestión Empresarial">
+    </div>
+    <div class="contenido-gestion">
+      <h2 id="gestion-titulo"></h2>
+      <p id="gestion-descripcion"></p>
+      <button onclick="abrirGestion()" id="gestion-boton"></button>
+    </div>
+  </section>
+  
+  <section id="faq-section" class="faq-container"></section>
+  
+  <section id="impacto-servicio" class="impacto-container"></section>
+
+  <section class="seccion-servicios-iconos">
+    <h2 class="titulo-seccion">Herramientas para impulsar tu negocio</h2>
+    <div class="iconos-grid">
+      <div class="icono-box">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <p>Contabilidad</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-info-circle"></i>
+        <p>Información</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-signature"></i>
+        <p>Firma Electrónica</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-headset"></i>
+        <p>CRM</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-tools"></i>
+        <p>Studio</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-sync-alt"></i>
+        <p>Suscripciones</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-store"></i>
+        <p>Punto de Venta</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-comments"></i>
+        <p>Conversaciones</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-file-alt"></i>
+        <p>Documentos</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-project-diagram"></i>
+        <p>Proyecto</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-clock"></i>
+        <p>Horas</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-shipping-fast"></i>
+        <p>Inventario</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-laptop-code"></i>
+        <p>Sitio Web</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-heart"></i>
+        <p>Marketing Social</p>
+      </div>
+      <div class="icono-box">
+        <i class="fas fa-chart-line"></i>
+        <p>Ventas</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="beneficios-container">
+    <h2>Beneficios Tangibles de la Gestión Empresarial</h2>
+    <div class="beneficios-grid">
+      <div class="beneficio">
+        <i class="fas fa-chart-line"></i>
+        <h3>Incremento de la productividad</h3>
+        <p>Permite mejorar los procesos y optimizar los recursos para lograr mejores resultados.</p>
+      </div>
+      <div class="beneficio">
+        <i class="fas fa-money-bill-wave"></i>
+        <h3>Reducción de costos</h3>
+        <p>Una mejor planificación y control financiero minimiza los gastos innecesarios.</p>
+      </div>
+      <div class="beneficio">
+        <i class="fas fa-people-arrows"></i>
+        <h3>Mejor uso del talento humano</h3>
+        <p>Distribución eficaz de funciones y responsabilidades dentro de la empresa.</p>
+      </div>
+      <div class="beneficio">
+        <i class="fas fa-bullseye"></i>
+        <h3>Mayor control de metas</h3>
+        <p>Facilita el monitoreo de resultados y el cumplimiento de objetivos estratégicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="estadisticas-section">
+    <h2 class="estadisticas-titulo">Impacto Tangible de la Gestión Empresarial</h2>
+    <div class="estadisticas-contenedor" id="estadisticas-contenedor">
+    </div>
+  </section>
+  <section class="contact-section scroll-animate" id="contacto">
+    <div class="contact-content">
+      <h2 class="contact-title">CONTÁCTANOS</h2>
+      <p class="contact-subtitle">¿Tiene consultas sobre nuestros servicios?</p>
+      <p class="contact-desc">Nuestros asesores comerciales están listos para atenderle.</p>
+      <a href="https://wa.me/51995619930?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios." target="_blank" class="contact-btn">
+        <i class="fas fa-paper-plane"></i> ENVIAR MENSAJE
+      </a>
+    </div>
+  </section>
+  
+  <section class="tools-section scroll-animate" id="herramientas">
+    <div class="tools-title">
+      <p class="subtitle">LO QUE APRENDERÁS</p>
+      <h2>Herramientas que te enseñamos a usar</h2>
+      <p class="description">Desarrolla competencias estratégicas utilizando herramientas clave para gestionar y optimizar tu empresa.</p>
+    </div>
+  
+    <div class="tools-container">
+      <div class="tool-box">
+        <img src="/assets/crm-empresarial.jpg" alt="CRM Empresarial">
+        <h3>CRM Empresarial</h3>
+        <p>Aprende a gestionar relaciones con clientes, automatizar ventas y tomar decisiones con datos centralizados.</p>
+      </div>
+      <div class="tool-box">
+        <img src="/assets/matriz.jpg" alt="FODA / PESTEL">
+        <h3>Matriz FODA / PESTEL</h3>
+        <p>Domina el análisis interno y externo para formular estrategias sólidas y enfocadas en tu organización.</p>
+      </div>
+      <div class="tool-box">
+        <img src="/assets/plan-estrategico.jpg" alt="Planes Estratégicos">
+        <h3>Planes Estratégicos</h3>
+        <p>Crea planes orientados a objetivos con visión a corto, mediano y largo plazo para tu negocio.</p>
+      </div>
+      <div class="tool-box">
+        <img src="/assets/kpi.png" alt="Indicadores KPI">
+        <h3>Indicadores KPI</h3>
+        <p>Implementa indicadores clave para medir rendimiento y tomar mejores decisiones en todas las áreas.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- footer  -->
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      
+      <div class="footer-brand">
+        <div class="logo-text">
+          <img src="./assets/logo.png" alt="Logo EducaPeru" class="footer-logo" />
+          <h2>EducaPeru Institute</h2>
+        </div>
+        <p>Formamos, impulsamos y conectamos tu marca con el éxito.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h3>Servicios</h3>
+        <ul>
+          <li><a href="./Gestion.html">Gestión Empresarial</a></li>
+          <li><a href="./capacitacion.html">Capacitación Profesional</a></li>
+          <li><a href="./marketing.html">Marketing Digital</a></li>
+          <li><a href="./MarcaPersonal.html">Marca Personal</a></li>
+          <li><a href="./terciarizacion.html">Tercerización Estratégica</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h3>Contáctanos</h3>
+        <p><i class="fas fa-map-marker-alt"></i> avenida Río Grande 312 , Urbanización la Esperanza, Pueblo Libre, Lima</p>
+        <p><i class="fas fa-envelope"></i> informes@educainstitute.edu.pe</p>
+        <p><i class="fas fa-phone-alt"></i> +51 995 619 930</p>
+      </div>
+  
+      <div class="footer-social">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a  href="https://www.facebook.com/share/1Y71GSmowZ/"  target="_blank" ><i  class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/educaperuinstitute?igsh=YzljYTk1ODg3Zg=="  target="_blank" ><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/educaperu-institute-1a6aa0345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"  target="_blank" ></i></a>
+          <a href="https://www.tiktok.com/@educaperu.institu?_t=ZM-8vpyn2ekb9p&_r=1"  target="_blank" ><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 EducaPeru Institute. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="js/script.js"></script>
+  <script src="js/slide-red.js"></script>
+  <script src="js/impacto.js"></script>
+  <script src="js/btn-wsap.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
+
+</body>
+</html>

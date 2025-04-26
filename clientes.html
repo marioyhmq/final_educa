@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educaperu</title>
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/red.css">
+  <link rel="stylesheet" href="./css/carata.css">
+  <link rel="stylesheet" href="./css/blog.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/btn-wsap.css">
+  <link rel="shortcut icon" href="./assets/log.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <script async src="https://kit.fontawesome.com/567102f065.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="assets/logo.png" alt="" id="logo">
+        <span>Educaperu</span>
+        </a>
+      </div>
+
+
+      <div id="btn-menu" onclick="llamar()">
+        <label class="fa-solid fa-bars" id="menu"></label>
+      </div>
+      <nav class="botonera" id="botonera">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="./index.html">Servicios</a>
+            <div class="dropdown-content">
+              <a href="./Gestion.html">Gestión Empresarial</a>
+              <a href="./capacitacion.html">Capacitación Profesional</a>
+              <a href="./MarcaPersonal.html">Marca Personal</a>
+              <a href="./marketing.html">Marketing Digital</a>
+              <a href="./terciarizacion.html">Terciarización Estratégica</a>
+            </div>
+          </li>
+          <li><a href="clientes.html">clientes</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slider -->
+  <div class="slider">
+    <button class="slider-arrow left" onclick="prevSlide()">&#10094;</button>
+    <div class="slides" id="slides">
+
+      <div class="slide">
+        <img src="assets/slide1.jpeg" alt="Slide 1">
+        <div class="slide-content">
+          <h2>Mejoramos Tu Gestión Empresarial</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide4.jpeg" alt="Slide 2">
+        <div class="slide-content">
+          <h2>Capacitación Profesional</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide3.jpeg" alt="Slide 3">
+        <div class="slide-content">
+          <h2>Potenciamos Tu Marca Personal</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWVy2T2ZUQNLgDJVRXwOLq9pRqab5GXR9BMw&s" alt="Slide 4">
+        <div class="slide-content">
+          <h2>Especialistas en Marketing Digital</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbrq78uWnuMb0rDgj38RM2PKeWoqHOAcHLw&s" alt="Slide 5">
+        <div class="slide-content">
+          <h2>Terciarización Estratégica</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="slider-arrow right" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+<!-- wsap -->
+<!-- Botón flotante de WhatsApp con animación -->
+<a href="https://wa.me/51995619930" class="btn-wsp" target="_blank" aria-label="Habla con nosotros por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+
+<!-- Inicio -->
+<div class="redes">
+  <section class="social-langer">
+    <div class="social-wrappee" id="slider-track">
+      <img src="assets/banner-1.png" alt="banner">
+      <img src="assets/banner-2.png" alt="banner">
+      <img src="assets/banner-3.png" alt="banner">
+      <img src="assets/banner-4.png" alt="banner">
+      <img src="assets/banner-5.png" alt="banner">
+      <img src="assets/banner-6.png" alt="banner">
+      <img src="assets/banner-7.png" alt="banner">
+      <img src="assets/banner-8.png" alt="banner">
+      <img src="assets/banner-9.png" alt="banner">
+      <img src="assets/banner-10.png" alt="banner">
+    </div>
+  </section>
+</div>
+
+<section class="blog-section">
+  <h2 class="blog-title">Últimos Artículos del Blog</h2>
+  <div class="blog-grid">
+    
+    <article class="blog-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0DyfeB5jcKpR8bCwwFa0DJe5hVZ5ECw7XNQ&s" alt="SEO para emprendedores" loading="lazy">
+      <div class="blog-content">
+        <time datetime="2025-04-01">1 de abril de 2025</time>
+        <h3>El poder del SEO en tu negocio</h3>
+        <p>Descubre por qué el SEO es clave para aumentar el posicionamiento de tu marca en buscadores.</p>
+        <a href="#">Leer más »</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="https://www.prospectfactory.com.mx/wp-content/uploads/2021/03/shutterstock_1498591892.png" alt="Marketing en redes sociales" loading="lazy">
+      <div class="blog-content">
+        <time datetime="2025-03-29">29 de marzo de 2025</time>
+        <h3>Redes sociales como motor de ventas</h3>
+        <p>Aprende cómo un Community Manager puede conectar con tu audiencia y aumentar tu conversión.</p>
+        <a href="#">Leer más »</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="https://static-blog.siteground.com/wp-content/uploads/sites/4/2022/12/caracteristicas-email-marketing.jpeg" alt="Email marketing efectivo" loading="lazy">
+      <div class="blog-content">
+        <time datetime="2025-03-26">26 de marzo de 2025</time>
+        <h3>Email Marketing que convierte</h3>
+        <p>Optimiza tus campañas de correo y mantente presente en la mente de tus clientes.</p>
+        <a href="#">Leer más »</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+
+<footer class="main-footer">
+  <div class="footer-container">
+    
+    <div class="footer-brand">
+      <div class="logo-text">
+        <img src="./assets/logo.png" alt="Logo EducaPeru" class="footer-logo" />
+        <h2>EducaPeru Institute</h2>
+      </div>
+      <p>Formamos, impulsamos y conectamos tu marca con el éxito.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Servicios</h3>
+      <ul>
+        <li><a href="./Gestion.html">Gestión Empresarial</a></li>
+        <li><a href="./capacitacion.html">Capacitación Profesional</a></li>
+        <li><a href="./marketing.html">Marketing Digital</a></li>
+        <li><a href="./MarcaPersonal.html">Marca Personal</a></li>
+        <li><a href="./terciarizacion.html">Tercerización Estratégica</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contáctanos</h3>
+      <p><i class="fas fa-map-marker-alt"></i> avenida Río Grande 312 , Urbanización la Esperanza, Pueblo Libre, Lima</p>
+      <p><i class="fas fa-envelope"></i> informes@educainstitute.edu.pe</p>
+      <p><i class="fas fa-phone-alt"></i> +51 995 619 930</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+        <a  href="https://www.facebook.com/share/1Y71GSmowZ/"  target="_blank" ><i  class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/educaperuinstitute?igsh=YzljYTk1ODg3Zg=="  target="_blank" ><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/educaperu-institute-1a6aa0345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"  target="_blank" ></i></a>
+        <a href="https://www.tiktok.com/@educaperu.institu?_t=ZM-8vpyn2ekb9p&_r=1"  target="_blank" ><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 EducaPeru Institute. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+  <script src="js/script.js"></script>
+  <script src="js/btn-wsap.js"></script>
+</body>
+</html>

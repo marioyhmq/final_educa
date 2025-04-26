@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educaperu</title>
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/servicios-general.css">
+  <link rel="stylesheet" href="./css/style-services.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/marketing.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/btn-wsap.css">
+  <link rel="shortcut icon" href="./assets/log.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <script async src="https://kit.fontawesome.com/567102f065.js" crossorigin="anonymous"></script>
+</head>
+<body data-servicio="marketing">
+  <header>
+    <div class="container">
+
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="assets/logo.png" alt="" id="logo">
+        <span>Educaperu</span>
+        </a>
+      </div>
+
+
+      <div id="btn-menu" onclick="llamar()">
+        <label class="fa-solid fa-bars" id="menu"></label>
+      </div>
+      <nav class="botonera" id="botonera">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="./marketing.html">Servicios</a>
+            <div class="dropdown-content">
+              <a href="./Gestion.html">Gestión Empresarial</a>
+              <a href="./capacitacion.html">Capacitación Profesional</a>
+              <a href="./MarcaPersonal.html">Marca Personal</a>
+              <a href="marketing.html">Marketing Digital</a>
+              <a href="./terciarizacion.html">Terciarización Estratégica</a>
+            </div>
+          </li>
+          <li><a href="./clientes.html">Clientes</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slider -->
+  <div class="slider">
+    <button class="slider-arrow left" onclick="prevSlide()">&#10094;</button>
+    <div class="slides" id="slides">
+
+      <div class="slide">
+        <img src="assets/slide1.jpeg" alt="Slide 1">
+        <div class="slide-content">
+          <h2>Mejoramos Tu Gestión Empresarial</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide4.jpeg" alt="Slide 2">
+        <div class="slide-content">
+          <h2>Capacitación Profesional</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide3.jpeg" alt="Slide 3">
+        <div class="slide-content">
+          <h2>Potenciamos Tu Marca Personal</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWVy2T2ZUQNLgDJVRXwOLq9pRqab5GXR9BMw&s" alt="Slide 4">
+        <div class="slide-content">
+          <h2>Especialistas en Marketing Digital</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbrq78uWnuMb0rDgj38RM2PKeWoqHOAcHLw&s" alt="Slide 5">
+        <div class="slide-content">
+          <h2>Terciarización Estratégica</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="slider-arrow right" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+<!-- wsap -->
+<!-- Botón flotante de WhatsApp con animación -->
+<a href="https://wa.me/51995619930" class="btn-wsp" target="_blank" aria-label="Habla con nosotros por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<!-- Inicio -->
+<div class="redes">
+  <section class="social-langer">
+    <div class="social-wrappee" id="slider-track">
+      <img src="assets/banner-1.png" alt="banner">
+      <img src="assets/banner-2.png" alt="banner">
+      <img src="assets/banner-3.png" alt="banner">
+      <img src="assets/banner-4.png" alt="banner">
+      <img src="assets/banner-5.png" alt="banner">
+      <img src="assets/banner-6.png" alt="banner">
+      <img src="assets/banner-7.png" alt="banner">
+      <img src="assets/banner-8.png" alt="banner">
+      <img src="assets/banner-9.png" alt="banner">
+      <img src="assets/banner-10.png" alt="banner">
+      <img src="assets/banner-1.png" alt="banner">
+      <img src="assets/banner-2.png" alt="banner">
+      <img src="assets/banner-3.png" alt="banner">
+      <img src="assets/banner-4.png" alt="banner">
+      <img src="assets/banner-5.png" alt="banner">
+      <img src="assets/banner-6.png" alt="banner">
+      <img src="assets/banner-7.png" alt="banner">
+      <img src="assets/banner-8.png" alt="banner">
+      <img src="assets/banner-9.png" alt="banner">
+      <img src="assets/banner-10.png" alt="banner">
+    </div>
+  </section>
+</div>
+<!-- servicios -->
+<section class="servicios" id="servicios">
+    <h2>Servicios que ofrecemos</h2>
+    <div class="servicios-grid">
+      <a href="./Gestion.html" class="servicio-card" data-id="1">
+        <i class="icono" data-feather="trending-up"></i>
+        <p>Gestion  <br> Empresarial</p>
+      </a>
+      <a href="./capacitacion.html" class="servicio-card" data-id="2">
+        <i class="icono" data-feather="search"></i>
+        <p>Capacitacion <br> Profesional</p>
+      </a>
+      <a href="./MarcaPersonal.html" class="servicio-card" data-id="3">
+        <i class="icono" data-feather="instagram"></i>
+        <p>Marca <br> Personal</p>
+      </a>
+      <a href="./marketing.html" class="servicio-card active" data-id="4">
+        <i class="icono" data-feather="users"></i>
+        <p>Marketing <br> Digital</p>
+      </a>
+      <a href="./terciarizacion.html" class="servicio-card " data-id="5">
+        <i class="icono" data-feather="globe"></i>
+        <p>Terciarizacion <br> estrategica</p>
+      </a>
+    </div>
+  </section>
+  
+  <section class="gestion-box" id="gestion-box">
+    <div class="imagen-gestion">
+      <img id="gestion-imagen" src="" alt="Gestión Empresarial">
+    </div>
+    <div class="contenido-gestion">
+      <h2 id="gestion-titulo"></h2>
+      <p id="gestion-descripcion"></p>
+      <button onclick="abrirMarketing()"  id="gestion-boton"></button>
+    </div>
+  </section>
+  
+  <section id="faq-section" class="faq-container"></section>
+  
+  <section id="impacto-servicio" class="impacto-container"></section>
+
+<!-- HTML -->
+<section class="warning-section">
+  <div class="warning-box">
+    <h2>¿Qué pasa si no aplicamos estrategias de marketing digital?</h2>
+    <p>Ignorar el marketing digital puede hacer que la empresa pierda presencia en línea, disminuya sus ventas o quede rezagada frente a la competencia que sí aprovecha los canales digitales.</p>
+  </div>
+</section>
+
+<section class="ventas-section">
+  <div class="ventas-texto">
+    <h2>¿Buscas mejorar tus ventas?</h2>
+    <p>Transformamos tus redes sociales en poderosas herramientas para conectar con tu audiencia y hacer crecer tu negocio.</p>
+  </div>
+  <div class="cards-container">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmHj4lgw_zqUyHmXXwKdcXfM6w9iNrUkrrdar6DMduN9D55GEtg9FwFROI4C5LG2StQhs&usqp=CAUs" alt="Contenido atractivo">
+      <h3>Contenido atractivo.</h3>
+      <p>Con nuestro contenido triplicamos nuestro alcance en redes sociales</p>
+      <span class="rating purple">⭐ 4.7</span>
+    </div>
+    <div class="card">
+      <img src="https://www.addseo.es/wp-content/uploads/2019/08/addseo_social_media.png" alt="Monitoreos Constantes">
+      <h3>Monitoreos Constantes</h3>
+      <p>Monitoreamos el desempeño de tus publicaciones</p>
+      <span class="rating purple">⭐ 4.5</span>
+    </div>
+    <div class="card">
+      <img src="https://imactions.agency/wp-content/uploads/2024/08/como-crear-contenido-para-redes-sociales-1024x1024.jpg" alt="Diseño visual atractivo">
+      <h3>Diseño visual atractivo</h3>
+      <p>Creación de contenido visual atractivo.</p>
+      <span class="rating yellow">⭐ 4.8</span>
+    </div>
+  </div>
+</section>
+
+
+<section id="areaServicios">
+  <div class="contenedorServicios">
+    <h2 class="tituloServicios">Nuestros <span>Servicios</span></h2>
+    <div class="gridServicios">
+      <div class="itemServicio">
+        <i class="fas fa-star"></i>
+        <h3>Formación Digital</h3>
+        <p>Talleres y cursos para capacitar a tu equipo en estrategias y herramientas digitales.</p>
+      </div>
+      <div class="itemServicio">
+        <i class="fas fa-handshake"></i>
+        <h3>Innovación Digital</h3>
+        <p>Implementamos tecnologías digitales para optimizar procesos y transformar negocios.</p>
+      </div>
+      <div class="itemServicio">
+        <i class="fas fa-layer-group"></i>
+        <h3>Gestión Integral de Redes Sociales</h3>
+        <p>Diseñamos, publicamos y monitoreamos contenido que impulse tu marca.</p>
+      </div>
+      <div class="itemServicio">
+        <i class="fas fa-user-check"></i>
+        <h3>Reputación Online</h3>
+        <p>Supervisamos menciones y opiniones para mantener la confianza en tu negocio.</p>
+      </div>
+      <div class="itemServicio">
+        <i class="fas fa-comment-slash"></i>
+        <h3>Gestión de Crisis en Redes</h3>
+        <p>Resolución efectiva de problemas y comentarios para proteger tu reputación.</p>
+      </div>
+      <div class="itemServicio">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Campañas de Publicidad Digital</h3>
+        <p>Campañas pagadas en Facebook, Instagram y LinkedIn.</p>
+      </div>
+      <div class="itemServicio">
+        <i class="fas fa-photo-video"></i>
+        <h3>Creación de Contenidos Visuales</h3>
+        <p>Fotos, vídeos y gráficos atractivos para captar la atención de tu audiencia.</p>
+      </div>
+      <div class="itemServicio">
+        <i class="fas fa-chart-line"></i>
+        <h3>Asesoría Estratégica</h3>
+        <p>Estrategias adaptadas a tus objetivos empresariales para mejorar presencia digital.</p>
+      </div>
+      <div class="itemServicio">
+        <i class="fas fa-chart-pie"></i>
+        <h3>Análisis de Métricas y Optimización</h3>
+        <p>Optimizamos métricas clave para mejorar el rendimiento de tus redes sociales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="galeria">
+  <h2>Galería de Imágenes de Marketing Digital</h2>
+  <div class="imagenes" id="galeria-contenedor">
+    <img src="/assets/Diseños/1.jpeg" alt="Marketing en redes sociales">
+    <img src="/assets/Diseños/2.jpeg" alt="Campaña publicitaria en línea">
+    <img src="/assets/Diseños/3.jpeg" alt="Análisis de métricas digitales">
+    <img src= "/assets/Diseños/4.jpeg" alt="Diseño de contenido visual">
+    <img src="/assets/Diseños/5.jpeg" alt="Reunión de estrategia digital">
+    <img src="/assets/Diseños/6.jpeg" alt="Publicidad en Google Ads">
+  </div>
+</section>
+
+<div class="overlay" id="overlay">
+  <span class="close-btn" id="cerrar">&times;</span>
+  <img src="" alt="imagen ampliada" id="imagen-grande">
+</div>
+
+
+<!-- objetivos -->
+<section class="objetivos-marketing">
+  <div class="contenedor-objetivos">
+    <h2 class="titulo-objetivos">¿Por qué contratar Marketing Digital?</h2>
+    <p class="intro-objetivos">
+      El marketing digital no es una opción, es una necesidad. Aquí te explicamos los objetivos que lograrás al implementarlo correctamente con EducaPeru.
+    </p>
+
+    <div class="lista-objetivos">
+      <div class="objetivo">
+        <i class="fas fa-bullseye"></i>
+        <h3>Alcanzar a tu público ideal</h3>
+        <p>Segmentamos estrategias para que llegues a quienes realmente necesitan tu producto o servicio.</p>
+      </div>
+
+      <div class="objetivo">
+        <i class="fas fa-rocket"></i>
+        <h3>Impulsar el crecimiento</h3>
+        <p>Tu marca podrá aumentar sus ventas, visibilidad y posicionamiento en corto tiempo.</p>
+      </div>
+
+      <div class="objetivo">
+        <i class="fas fa-chart-line"></i>
+        <h3>Medir tus resultados</h3>
+        <p>Te mostramos métricas claras del impacto de cada acción digital aplicada.</p>
+      </div>
+
+      <div class="objetivo">
+        <i class="fas fa-users"></i>
+        <h3>Fidelizar a tus clientes</h3>
+        <p>El marketing digital te ayuda a mantener una relación continua y cercana con tus clientes.</p>
+      </div>
+
+      <div class="objetivo">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Diferenciarte de la competencia</h3>
+        <p>Crearemos una identidad digital que refleje el valor único de tu marca.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- frases  -->
+<section class="articulos-blog">
+  <h2 class="titulo-seccion">Artículos y Consejos de Marketing</h2>
+  <div class="contenedor-articulos">
+    <div class="fila">
+      <div class="articulo">
+        <div class="img-articulo" style="background-image: url('https://agenciadigitalamd.com/wp-content/uploads/2024/10/SEO-696x464-1.jpg');"></div>
+        <div class="contenido-articulo">
+          <h3>El poder del SEO en tu negocio</h3>
+          <span class="fecha">6 de febrero del 2025</span>
+          <p>Descubre por qué el SEO es la clave para aumentar el posicionamiento de tu marca en buscadores.</p>
+          <a href="https://www.hostinger.com/es/tutoriales/como-vender-seo?utm_campaign=Generic-Tutorials-DSA|NT:Se|LO:Other-LATAM-t2&utm_medium=ppc&gad_source=1&gbraid=0AAAAADMy-haBoP7PQD9A2226zFJ5bDNJD&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUGui4-G8GpQ81EBqXk6m9p0Llidq459wJuoMXhUS2C9Yw1d4WA7ibkaArgAEALw_wcB" target="_blank" class="leer-mas">LEER MÁS &raquo;</a>
+        </div>
+      </div>
+
+      <div class="articulo">
+        <div class="img-articulo" style="background-image: url('https://s3-us-west-2.amazonaws.com/bfxpublicos/salesupblog/100002710249.png');"></div>
+        <div class="contenido-articulo">
+          <h3>Redes sociales como motor de ventas</h3>
+          <span class="fecha">17 de octubre del 2025</span>
+          <p>Aprende cómo un Community Manager puede conectar con tu audiencia y aumentar tu conversión.</p>
+          <a href="https://www.puromarketing.com/8/214412/convertido-redes-sociales-nuevos-motores-busqueda" target="_blank" class="leer-mas">LEER MÁS &raquo;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="fila fila-centro">
+      <div class="articulo">
+        <div class="img-articulo" style="background-image: url('https://nubeser.com/wp-content/uploads/2016/08/email-marketing-convierte.jpg');"></div>
+        <div class="contenido-articulo">
+          <h3>Email Marketing que convierte</h3>
+          <span class="fecha">26 de marzo de 2025</span>
+          <p>Optimiza tus campañas de correo y mantente presente en la mente de tus clientes.</p>
+          <a href="https://www.mailerlite.com/es/email-marketing-by-industry/blogging" target="_blank" class="leer-mas">LEER MÁS &raquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+
+<footer class="main-footer">
+  <div class="footer-container">
+    
+    <div class="footer-brand">
+      <div class="logo-text">
+        <img src="./assets/logo.png" alt="Logo EducaPeru" class="footer-logo" />
+        <h2>EducaPeru Institute</h2>
+      </div>
+      <p>Formamos, impulsamos y conectamos tu marca con el éxito.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Servicios</h3>
+      <ul>
+        <li><a href="./Gestion.html">Gestión Empresarial</a></li>
+        <li><a href="./capacitacion.html">Capacitación Profesional</a></li>
+        <li><a href="./marketing.html">Marketing Digital</a></li>
+        <li><a href="./MarcaPersonal.html">Marca Personal</a></li>
+        <li><a href="./terciarizacion.html">Tercerización Estratégica</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contáctanos</h3>
+      <p><i class="fas fa-map-marker-alt"></i> avenida Río Grande 312 , Urbanización la Esperanza, Pueblo Libre, Lima</p>
+      <p><i class="fas fa-envelope"></i> informes@educainstitute.edu.pe</p>
+      <p><i class="fas fa-phone-alt"></i> +51 995 619 930</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+        <a  href="https://www.facebook.com/share/1Y71GSmowZ/"  target="_blank" ><i  class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/educaperuinstitute?igsh=YzljYTk1ODg3Zg=="  target="_blank" ><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/educaperu-institute-1a6aa0345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"  target="_blank" ></i></a>
+        <a href="https://www.tiktok.com/@educaperu.institu?_t=ZM-8vpyn2ekb9p&_r=1"  target="_blank" ><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 EducaPeru Institute. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/slide-red.js"></script>
+  <script src="js/impacto.js"></script>
+  <script src="./js/marketing.js"></script>
+  <script src="js/btn-wsap.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
+
+</body>
+</html>

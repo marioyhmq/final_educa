@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educaperu</title>
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/servicios-general.css">
+  <link rel="stylesheet" href="./css/style-services.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/btn-wsap.css">
+  <link rel="stylesheet" href="./css/capacitacion.css">
+
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="shortcut icon" href="./assets/log.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <script async src="https://kit.fontawesome.com/567102f065.js" crossorigin="anonymous"></script>
+</head>
+<body data-servicio="capacitacion">
+  <header>
+    <div class="container">
+
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="assets/logo.png" alt="" id="logo">
+        <span>Educaperu</span>
+        </a>
+      </div>
+
+
+      <div id="btn-menu" onclick="llamar()">
+        <label class="fa-solid fa-bars" id="menu"></label>
+      </div>
+      <nav class="botonera" id="botonera">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="capacitacion.html">Servicios</a>
+            <div class="dropdown-content">
+              <a href="./Gestion.html">Gestión Empresarial</a>
+              <a href="capacitacion.html">Capacitación Profesional</a>
+              <a href="./MarcaPersonal.html">Marca Personal</a>
+              <a href="./marketing.html">Marketing Digital</a>
+              <a href="./terciarizacion.html">Terciarización Estratégica</a>
+            </div>
+          </li>
+          <li><a href="./clientes.html">Clientes</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slider -->
+  <div class="slider">
+    <button class="slider-arrow left" onclick="prevSlide()">&#10094;</button>
+    <div class="slides" id="slides">
+
+      <div class="slide">
+        <img src="assets/slide1.jpeg" alt="Slide 1">
+        <div class="slide-content">
+          <h2>Mejoramos Tu Gestión Empresarial</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide4.jpeg" alt="Slide 2">
+        <div class="slide-content">
+          <h2>Capacitación Profesional</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide3.jpeg" alt="Slide 3">
+        <div class="slide-content">
+          <h2>Potenciamos Tu Marca Personal</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWVy2T2ZUQNLgDJVRXwOLq9pRqab5GXR9BMw&s" alt="Slide 4">
+        <div class="slide-content">
+          <h2>Especialistas en Marketing Digital</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbrq78uWnuMb0rDgj38RM2PKeWoqHOAcHLw&s" alt="Slide 5">
+        <div class="slide-content">
+          <h2>Terciarización Estratégica</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="slider-arrow right" onclick="nextSlide()">&#10095;</button>
+  </div>
+  <!-- wsap -->
+<!-- Botón flotante de WhatsApp con animación -->
+<a href="https://wa.me/51995619930" class="btn-wsp" target="_blank" aria-label="Habla con nosotros por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Inicio -->
+<div class="redes">
+  <section class="social-langer">
+    <div class="social-wrappee" id="slider-track">
+      <img src="assets/banner-1.png" alt="banner">
+      <img src="assets/banner-2.png" alt="banner">
+      <img src="assets/banner-3.png" alt="banner">
+      <img src="assets/banner-4.png" alt="banner">
+      <img src="assets/banner-5.png" alt="banner">
+      <img src="assets/banner-6.png" alt="banner">
+      <img src="assets/banner-7.png" alt="banner">
+      <img src="assets/banner-8.png" alt="banner">
+      <img src="assets/banner-9.png" alt="banner">
+      <img src="assets/banner-10.png" alt="banner">
+      <img src="assets/banner-1.png" alt="banner">
+      <img src="assets/banner-2.png" alt="banner">
+      <img src="assets/banner-3.png" alt="banner">
+      <img src="assets/banner-4.png" alt="banner">
+      <img src="assets/banner-5.png" alt="banner">
+      <img src="assets/banner-6.png" alt="banner">
+      <img src="assets/banner-7.png" alt="banner">
+      <img src="assets/banner-8.png" alt="banner">
+      <img src="assets/banner-9.png" alt="banner">
+      <img src="assets/banner-10.png" alt="banner">
+    </div>
+  </section>
+</div>
+
+<!-- servicios -->
+<section class="servicios" id="servicios">
+  <h2>Servicios que ofrecemos</h2>
+  <div class="servicios-grid">
+    <a href="./Gestion.html" class="servicio-card " data-id="1">
+      <i class="icono" data-feather="trending-up"></i>
+      <p>Gestion  <br> Empresarial</p>
+    </a>
+    <a href="./capacitacion.html" class="servicio-card active" data-id="2">
+      <i class="icono" data-feather="search"></i>
+      <p>Capacitacion <br> Profesional</p>
+    </a>
+    <a href="./MarcaPersonal.html" class="servicio-card " data-id="3">
+      <i class="icono" data-feather="instagram"></i>
+      <p>Marca <br> Personal</p>
+    </a>
+    <a href="./marketing.html" class="servicio-card " data-id="4">
+      <i class="icono" data-feather="users"></i>
+      <p>Marketing <br> Digital</p>
+    </a>
+    <a href="./terciarizacion.html" class="servicio-card " data-id="5">
+      <i class="icono" data-feather="globe"></i>
+      <p>Terciarizacion <br> estrategica</p>
+    </a>
+  </div>
+</section>
+<!-- capacitarnos -->
+<section class="gestion-box" id="gestion-box">
+  <div class="imagen-gestion">
+    <img id="gestion-imagen" src="" alt="Gestión Empresarial">
+  </div>
+  <div class="contenido-gestion">
+    <h2 id="gestion-titulo"></h2>
+    <p id="gestion-descripcion"></p>
+    <button onclick="abrirCapacitarnos()" id="gestion-boton"></button>
+  </div>
+</section>
+
+<section id="faq-section" class="faq-container"></section>
+
+<section id="impacto-servicio" class="impacto-container"></section>
+
+<!-- HTML: Sección de galería reutilizable -->
+<section class="galeria">
+  <h2 class="galeria-titulo">Momentos de Nuestros Talleres</h2>
+  <div class="galeria-grid" id="galeriaContainer">
+    <!-- Imágenes cargadas desde JS -->
+  </div>
+
+  <!-- Modal -->
+  <div id="imagenModal" class="modal">
+    <span class="cerrar">&times;</span>
+    <img class="modal-contenido" id="imgAmpliada">
+  </div>
+</section>
+
+
+<!-- Sección de Módulos de Capacitación -->
+<section class="modulos-section">
+  <h2 class="modulos-titulo">Programas de Capacitación Profesional</h2>
+  <div class="modulos-grid" id="modulosContainer">
+    <!-- Los módulos se agregan dinámicamente con JS -->
+  </div>
+</section>
+
+
+
+<section class="beneficios">
+  <h2 class="beneficios__titulo">Beneficios de capacitarse con EducaPeru</h2>
+  <p class="beneficios__subtitulo">Obtén ventajas reales para tu desarrollo profesional y laboral</p>
+
+  <div class="beneficios__contenedor">
+    <div class="beneficio__card">
+      <i class="fas fa-certificate"></i>
+      <h3>Certificación reconocida</h3>
+      <p>Obtén diplomas con respaldo académico para potenciar tu CV.</p>
+    </div>
+
+    <div class="beneficio__card">
+      <i class="fas fa-briefcase"></i>
+      <h3>Mayor empleabilidad</h3>
+      <p>Adquiere competencias que te posicionen mejor en el mercado laboral.</p>
+    </div>
+
+    <div class="beneficio__card">
+      <i class="fas fa-book-open"></i>
+      <h3>Contenido actualizado</h3>
+      <p>Capacitación basada en tendencias actuales y casos reales.</p>
+    </div>
+
+    <div class="beneficio__card">
+      <i class="fas fa-clock"></i>
+      <h3>Flexibilidad horaria</h3>
+      <p>Accede a clases grabadas y en vivo, adaptadas a tu ritmo de vida.</p>
+    </div>
+
+    <div class="beneficio__card">
+      <i class="fas fa-users"></i>
+      <h3>Red de contactos</h3>
+      <p>Forma parte de una comunidad activa de profesionales y expertos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-taller">
+  <div class="taller-container">
+    <div class="taller-image">
+      <img src="./assets/SEMINARIO.jpeg" alt="Taller Gratuito Educa Peru">
+    </div>
+    <div class="taller-info">
+      <h2>¡Participa en nuestro <span class="resaltado">TALLER GRATUITO</span>!</h2>
+      <p><strong>Fecha:</strong> Sábado 15 de Febrero</p>
+      <p><strong>Hora:</strong> 10:00 AM</p>
+      <p><strong>Ubicación:</strong> Calle Mártir Olaya 129, Oficina 1406 - Miraflores</p>
+      <ul>
+        <li>Refrigerio Buffet</li>
+        <li>Certificado Físico Impreso</li>
+        <li>Materiales Físicos Impresos</li>
+        <li>Seminario las 5 S: Clave para el Éxito</li>
+        <li>Impulsa Tu Marca Personal</li>
+        <li>Sorteo de 5 Libros del Sistema Financiero</li>
+      </ul>
+      <a href="https://wa.me/51995619930" class="btn-taller">
+        <i class="fas fa-paper-plane"></i> INSCRÍBETE AHORA
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section-taller">
+  <div class="taller-container">
+    <div class="taller-image">
+      <img src="./assets/negocios ganadores.jpeg" alt="Taller Gratuito Educa Peru">
+    </div>
+    <div class="taller-info">
+      <h2>¡Participa en nuestro <span class="resaltado">TALLER GRATUITO</span>!</h2>
+      <p><strong>Fecha:</strong> Sábado 5 de Febrero</p>
+      <p><strong>Hora:</strong> 07:00 pM</p>
+      <p><strong>Ubicación:</strong> via zoom</p>
+      <ul>
+
+        <li>Certificado  Digital</li>
+        <li>Regalos Exclusivos</li>
+        <li>Libro Digital gratuito</li>
+        <li>Impulsa Tu Negocio</li>
+      </ul>
+      <a href="https://wa.me/51995619930" class="btn-taller">
+        <i class="fas fa-paper-plane"></i> INSCRÍBETE AHORA
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+
+
+<footer class="main-footer">
+  <div class="footer-container">
+    
+    <div class="footer-brand">
+      <div class="logo-text">
+        <img src="./assets/logo.png" alt="Logo EducaPeru" class="footer-logo" />
+        <h2>EducaPeru Institute</h2>
+      </div>
+      <p>Formamos, impulsamos y conectamos tu marca con el éxito.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Servicios</h3>
+      <ul>
+        <li><a href="./Gestion.html">Gestión Empresarial</a></li>
+        <li><a href="./capacitacion.html">Capacitación Profesional</a></li>
+        <li><a href="./marketing.html">Marketing Digital</a></li>
+        <li><a href="./MarcaPersonal.html">Marca Personal</a></li>
+        <li><a href="./terciarizacion.html">Tercerización Estratégica</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contáctanos</h3>
+      <p><i class="fas fa-map-marker-alt"></i> avenida Río Grande 312 , Urbanización la Esperanza, Pueblo Libre, Lima</p>
+      <p><i class="fas fa-envelope"></i> informes@educainstitute.edu.pe</p>
+      <p><i class="fas fa-phone-alt"></i> +51 995 619 930</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+        <a  href="https://www.facebook.com/share/1Y71GSmowZ/"  target="_blank" ><i  class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/educaperuinstitute?igsh=YzljYTk1ODg3Zg=="  target="_blank" ><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/educaperu-institute-1a6aa0345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"  target="_blank" ></i></a>
+        <a href="https://www.tiktok.com/@educaperu.institu?_t=ZM-8vpyn2ekb9p&_r=1"  target="_blank" ><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 EducaPeru Institute. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/slide-red.js"></script>
+  <script src="js/capacitacion.js"></script>
+  <script src="js/btn-wsap.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educaperu</title>
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/servicios-general.css">
+  <link rel="stylesheet" href="./css/style-services.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/terciarizacion.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/btn-wsap.css">
+  <link rel="shortcut icon" href="./assets/log.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script async src="https://kit.fontawesome.com/567102f065.js" crossorigin="anonymous"></script>
+  
+</head>
+<body data-servicio="terciarizacion">
+  <header>
+    <div class="container">
+
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="assets/logo.png" alt="" id="logo">
+        <span>Educaperu</span>
+        </a>
+      </div>
+
+
+      <div id="btn-menu" onclick="llamar()">
+        <label class="fa-solid fa-bars" id="menu"></label>
+      </div>
+      <nav class="botonera" id="botonera">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="terciarizacion.html" >Servicios</a>
+            <div class="dropdown-content">
+              <a href="./Gestion.html">Gestión Empresarial</a>
+              <a href="./capacitacion.html">Capacitación Profesional</a>
+              <a href="./MarcaPersonal.html">Marca Personal</a>
+              <a href="./marketing.html">Marketing Digital</a>
+              <a href="terciarizacion.html">Terciarización Estratégica</a>
+            </div>
+          </li>
+          <li><a href="./clientes.html">Clientes</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slider -->
+  <div class="slider">
+    <button class="slider-arrow left" onclick="prevSlide()">&#10094;</button>
+    <div class="slides" id="slides">
+
+      <div class="slide">
+        <img src="assets/slide1.jpeg" alt="Slide 1">
+        <div class="slide-content">
+          <h2>Mejoramos Tu Gestión Empresarial</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide4.jpeg" alt="Slide 2">
+        <div class="slide-content">
+          <h2>Capacitación Profesional</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide3.jpeg" alt="Slide 3">
+        <div class="slide-content">
+          <h2>Potenciamos Tu Marca Personal</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWVy2T2ZUQNLgDJVRXwOLq9pRqab5GXR9BMw&s" alt="Slide 4">
+        <div class="slide-content">
+          <h2>Especialistas en Marketing Digital</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbrq78uWnuMb0rDgj38RM2PKeWoqHOAcHLw&s" alt="Slide 5">
+        <div class="slide-content">
+          <h2>Terciarización Estratégica</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="slider-arrow right" onclick="nextSlide()">&#10095;</button>
+  </div>
+<!-- wsap -->
+<!-- Botón flotante de WhatsApp con animación -->
+<a href="https://wa.me/51995619930" class="btn-wsp" target="_blank" aria-label="Habla con nosotros por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<!-- Inicio -->
+<div class="redes">
+  <section class="social-langer">
+    <div class="social-wrappee" id="slider-track">
+      <img src="assets/banner-1.png" alt="banner">
+      <img src="assets/banner-2.png" alt="banner">
+      <img src="assets/banner-3.png" alt="banner">
+      <img src="assets/banner-4.png" alt="banner">
+      <img src="assets/banner-5.png" alt="banner">
+      <img src="assets/banner-6.png" alt="banner">
+      <img src="assets/banner-7.png" alt="banner">
+      <img src="assets/banner-8.png" alt="banner">
+      <img src="assets/banner-9.png" alt="banner">
+      <img src="assets/banner-10.png" alt="banner">
+      <img src="assets/banner-1.png" alt="banner">
+      <img src="assets/banner-2.png" alt="banner">
+      <img src="assets/banner-3.png" alt="banner">
+      <img src="assets/banner-4.png" alt="banner">
+      <img src="assets/banner-5.png" alt="banner">
+      <img src="assets/banner-6.png" alt="banner">
+      <img src="assets/banner-7.png" alt="banner">
+      <img src="assets/banner-8.png" alt="banner">
+      <img src="assets/banner-9.png" alt="banner">
+      <img src="assets/banner-10.png" alt="banner">
+    </div>
+  </section>
+</div>
+
+<!-- servicios -->
+<section class="servicios" id="servicios">
+  <h2>Servicios que ofrecemos</h2>
+  <div class="servicios-grid">
+    <a href="./Gestion.html" class="servicio-card " data-id="1">
+      <i class="icono" data-feather="trending-up"></i>
+      <p>Gestion  <br> Empresarial</p>
+    </a>
+    <a href="./capacitacion.html" class="servicio-card " data-id="2">
+      <i class="icono" data-feather="search"></i>
+      <p>Capacitacion <br> Profesional</p>
+    </a>
+    <a href="./MarcaPersonal.html" class="servicio-card " data-id="3">
+      <i class="icono" data-feather="instagram"></i>
+      <p>Marca <br> Personal</p>
+    </a>
+    <a href="./marketing.html" class="servicio-card " data-id="4">
+        <i class="icono" data-feather="users"></i>
+        <p>Marketing <br> Digital</p>
+    </a>
+    <a href="./terciarizacion.html" class="servicio-card active" data-id="5">
+        <i class="icono" data-feather="globe"></i>
+        <p>Terciarizacion <br> estrategica</p>
+    </a>
+  </div>
+</section>
+
+<section class="gestion-box" id="gestion-box">
+  <div class="imagen-gestion">
+    <img id="gestion-imagen" src="" alt="Gestión Empresarial">
+  </div>
+  <div class="contenido-gestion">
+    <h2 id="gestion-titulo"></h2>
+    <p id="gestion-descripcion"></p>
+    <button onclick="abrirTerciarizacion()" id="gestion-boton"></button>
+  </div>
+</section>
+
+
+<section id="faq-section" class="faq-container"></section>
+
+<section id="impacto-servicio" class="impacto-container"></section>
+
+
+<section class="terciarizacion" id="terciarizacion">
+  <h2 class="titulo">Tercerización Estratégica para el Éxito Empresarial</h2>
+  <p class="descripcion">
+    Externaliza procesos clave con EducaPeru y enfócate en lo que realmente importa: hacer crecer tu negocio.
+    Nuestro servicio de tercerización estratégica te ofrece soluciones a medida, seguras y altamente eficientes.
+  </p>
+
+  <div class="tarjetas">
+    <div class="card" data-aos="fade-up">
+      <i class="fas fa-headset icono"></i>
+      <h3>Atención al Cliente</h3>
+      <p>Brinda una experiencia profesional y empática sin necesidad de aumentar tu equipo interno.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <i class="fas fa-users-cog icono"></i>
+      <h3>Gestín de RR. HH.</h3>
+      <p>Confía en nosotros para la selección, contratación y gestión del personal calificado.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-chart-line icono"></i>
+      <h3>Gestín Administrativa</h3>
+      <p>Optimiza recursos y mejora tu eficiencia delegando tareas administrativas especializadas.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <i class="fas fa-file-invoice-dollar icono"></i>
+      <h3>Outsourcing Contable</h3>
+      <p>Procesos contables actualizados, seguros y siempre al día con la normativa vigente.</p>
+    </div>
+  </div>
+</section>
+<!-- carrusel -->
+<section class="slider-section">
+  <h2 class="slider-title">Servicios que Tercerizamos</h2>
+  <div class="slider-wrapper">
+    <div class="slider-track" id="slider">
+      <div class="slider-card"><i class="fas fa-headset"></i><p>Atención al Cliente</p></div>
+      <div class="slider-card"><i class="fas fa-users"></i><p>Recursos Humanos</p></div>
+      <div class="slider-card"><i class="fas fa-laptop-code"></i><p>Soporte Técnico</p></div>
+      <div class="slider-card"><i class="fas fa-file-invoice-dollar"></i><p>Contabilidad</p></div>
+      <div class="slider-card"><i class="fas fa-briefcase"></i><p>Gestión Administrativa</p></div>
+      <div class="slider-card"><i class="fas fa-bullhorn"></i><p>Marketing Digital</p></div>
+      <div class="slider-card"><i class="fas fa-comments"></i><p>Redes Sociales</p></div>
+      <div class="slider-card"><i class="fas fa-user-shield"></i><p>Seguridad Informática</p></div>
+
+      <!-- 🔁 Duplicados para loop infinito -->
+      <div class="slider-card"><i class="fas fa-headset"></i><p>Atención al Cliente</p></div>
+      <div class="slider-card"><i class="fas fa-users"></i><p>Recursos Humanos</p></div>
+      <div class="slider-card"><i class="fas fa-laptop-code"></i><p>Soporte Técnico</p></div>
+      <div class="slider-card"><i class="fas fa-file-invoice-dollar"></i><p>Contabilidad</p></div>
+      <div class="slider-card"><i class="fas fa-briefcase"></i><p>Gestión Administrativa</p></div>
+      <div class="slider-card"><i class="fas fa-bullhorn"></i><p>Marketing Digital</p></div>
+      <div class="slider-card"><i class="fas fa-comments"></i><p>Redes Sociales</p></div>
+      <div class="slider-card"><i class="fas fa-user-shield"></i><p>Seguridad Informática</p></div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+
+
+<footer class="main-footer">
+  <div class="footer-container">
+    
+    <div class="footer-brand">
+      <div class="logo-text">
+        <img src="./assets/logo.png" alt="Logo EducaPeru" class="footer-logo" />
+        <h2>EducaPeru Institute</h2>
+      </div>
+      <p>Formamos, impulsamos y conectamos tu marca con el éxito.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Servicios</h3>
+      <ul>
+        <li><a href="./Gestion.html">Gestión Empresarial</a></li>
+        <li><a href="./capacitacion.html">Capacitación Profesional</a></li>
+        <li><a href="./marketing.html">Marketing Digital</a></li>
+        <li><a href="./MarcaPersonal.html">Marca Personal</a></li>
+        <li><a href="./terciarizacion.html">Tercerización Estratégica</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contáctanos</h3>
+      <p><i class="fas fa-map-marker-alt"></i>avenida Río Grande 312 , Urbanización la Esperanza, Pueblo Libre, Lima</p>
+      <p><i class="fas fa-envelope"></i> informes@educainstitute.edu.pe</p>
+      <p><i class="fas fa-phone-alt"></i> +51 995 619 930</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+        <a  href="https://www.facebook.com/share/1Y71GSmowZ/"  target="_blank" ><i  class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/educaperuinstitute?igsh=YzljYTk1ODg3Zg=="  target="_blank" ><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/educaperu-institute-1a6aa0345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"  target="_blank" ></i></a>
+        <a href="https://www.tiktok.com/@educaperu.institu?_t=ZM-8vpyn2ekb9p&_r=1"  target="_blank" ><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 EducaPeru Institute. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+  <script src="js/script.js"></script>
+  <script src="js/slide-red.js"></script>
+  <script src="js/terciazrizacion.js"></script>
+  <script src="js/btn-wsap.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
+
+</body>
+</html>

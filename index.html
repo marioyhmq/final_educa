@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educaperu</title>
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/red.css">
+  <link rel="stylesheet" href="./css/carata.css">
+  <link rel="stylesheet" href="./css/pop_pap.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/btn-wsap.css">
+  <link rel="stylesheet" href="./css/preloader.css">
+  <link rel="shortcut icon" href="./assets/log.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <script async src="https://kit.fontawesome.com/567102f065.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- PRELOADER EDUCAPERU -->
+    <!-- <div id="preloader">
+      <div class="preloader-logo">
+        <img src="./assets/LOG-SIN.jpeg" alt="EducaPeru Institute" id="logoAnimado">
+      </div>
+    </div> -->
+
+  <header>
+    <div class="container">
+
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="assets/logo.png" alt="" id="logo">
+        <span>Educaperu</span>
+        </a>
+      </div>
+
+
+      <div id="btn-menu" onclick="llamar()">
+        <label class="fa-solid fa-bars" id="menu"></label>
+      </div>
+      <nav class="botonera" id="botonera">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="#">Servicios</a>
+            <div class="dropdown-content">
+              <a href="./Gestion.html">Gestión Empresarial</a>
+              <a href="./capacitacion.html">Capacitación Profesional</a>
+              <a href="./MarcaPersonal.html">Marca Personal</a>
+              <a href="./marketing.html">Marketing Digital</a>
+              <a href="./terciarizacion.html">Terciarización Estratégica</a>
+            </div>
+          </li>
+          <li><a href="./clientes.html">Clientes</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slider -->
+  <div class="slider">
+    <button class="slider-arrow left" onclick="prevSlide()">&#10094;</button>
+    <div class="slides" id="slides">
+
+      <div class="slide">
+        <img src="assets/slide1.jpeg" alt="Slide 1">
+        <div class="slide-content">
+          <h2>Mejoramos Tu Gestión Empresarial</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide4.jpeg" alt="Slide 2">
+        <div class="slide-content">
+          <h2>Capacitación Profesional</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="assets/slide3.jpeg" alt="Slide 3">
+        <div class="slide-content">
+          <h2>Potenciamos Tu Marca Personal</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWVy2T2ZUQNLgDJVRXwOLq9pRqab5GXR9BMw&s" alt="Slide 4">
+        <div class="slide-content">
+          <h2>Especialistas en Marketing Digital</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYbrq78uWnuMb0rDgj38RM2PKeWoqHOAcHLw&s" alt="Slide 5">
+        <div class="slide-content">
+          <h2>Terciarización Estratégica</h2>
+          <div class="button-group">
+            <button onclick="abrirWhatsApp()" >Contáctanos</button>
+            <button onclick="scrollASeccion()">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="slider-arrow right" onclick="nextSlide()">&#10095;</button>
+  </div>
+<!-- wsap -->
+<!-- Botón flotante de WhatsApp con animación -->
+<a href="https://wa.me/51995619930" class="btn-wsp" target="_blank" aria-label="Habla con nosotros por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Inicio -->
+<div class="redes">
+  <section class="social-langer">
+    <div class="social-wrappee" id="slider-track">
+      <img src="assets/banner-1.png" alt="banner">
+      <img src="assets/banner-2.png" alt="banner">
+      <img src="assets/banner-3.png" alt="banner">
+      <img src="assets/banner-4.png" alt="banner">
+      <img src="assets/banner-5.png" alt="banner">
+      <img src="assets/banner-6.png" alt="banner">
+      <img src="assets/banner-7.png" alt="banner">
+      <img src="assets/banner-8.png" alt="banner">
+      <img src="assets/banner-9.png" alt="banner">
+      <img src="assets/banner-10.png" alt="banner">
+      <img src="assets/banner-1.png" alt="banner">
+      <img src="assets/banner-2.png" alt="banner">
+      <img src="assets/banner-3.png" alt="banner">
+      <img src="assets/banner-4.png" alt="banner">
+      <img src="assets/banner-5.png" alt="banner">
+      <img src="assets/banner-6.png" alt="banner">
+      <img src="assets/banner-7.png" alt="banner">
+      <img src="assets/banner-8.png" alt="banner">
+      <img src="assets/banner-9.png" alt="banner">
+      <img src="assets/banner-10.png" alt="banner">
+    </div>
+  </section>
+</div>
+<!-- Alerta de curso  -->
+
+<div class="popup-alert" id="popup-alert">
+  <div class="popup-content">
+    <span class="popup-close" id="popup-close">&times;</span>
+    <img src="https://posgrado.utn.edu.ec/wp-content/uploads/2024/06/marketing-digital-en-linea.jpg" alt="Curso Negocios Ganadores" id="popup-img" />
+    <h2>Únete a EducaPeru Institute <span id="popup-title"> Y transforma ideas en impacto.</span></h2>
+    <a href="https://wa.me/51995660930?text=Hola,%20quiero%20Informacion%20al%20sobre%20llevar%20mi%20negocio%20al%20exito" 
+       target="_blank" class="btn-wsp-popup" id="popup-link">CONTACTANOS</a>
+  </div>
+</div> 
+
+
+<section class="presentacion scroll-fade">
+  <div class="presentacion-contenido">
+    <div class="presentacion-imagen">
+      <img src="assets/cli-1.jpeg" alt="Jefe de Operaciones" />
+    </div>
+    <div class="presentacion-texto">
+      <h2>Mgster. Pablo fedeli</h2>
+      <p>
+        El Mgster. Pablo Fedeli lidera el área operativa de <strong>EducaPeru Institute</strong>, asegurando la excelencia en nuestros servicios de <strong>gestión empresarial</strong>, <strong>marketing digital</strong> y <strong>capacitación profesional</strong>. Con una amplia  experiencia, su visión estratégica y compromiso impulsan el desarrollo de soluciones efectivas para empresas, emprendedores y profesionales en todo el Perú.
+      </p>
+      <a href="assets/cv-pablo-fedeli.pdf" class="btn-descargar" download>
+        Descargar Currículum
+      </a>      
+    </div>
+  </div>
+</section>
+
+<section class="caracteristicas scroll-fade">
+  <div class="caracteristica">
+    <div class="icono">📝</div>
+    <h3>Comunicación Estratégica</h3>
+    <p>Transformamos ideas en mensajes que conectan.
+      Creamos contenido claro, persuasivo y alineado a tu identidad de marca, generando confianza e impulsando la fidelización.</p>
+  </div>
+  <div class="caracteristica">
+    <div class="icono">📊</div>
+    <h3>Estrategia SEO Inteligente</h3>
+    <p>Haz que te encuentren primero.
+      Aplicamos técnicas de posicionamiento web que aumentan tu visibilidad en Google y atraen tráfico calificado de manera orgánica.</p>
+  </div>
+  <div class="caracteristica">
+    <div class="icono">✅</div>
+    <h3>Gestión de Contenido Profesional</h3>
+    <p>Tu sitio siempre actualizado y relevante.
+      Mantenemos tu web segura, optimizada y con información útil que mejora la experiencia del usuario y fortalece tu presencia online.</p>
+  </div>
+</section>
+
+
+<section class="valores scroll-fade">
+  <div class="valor-card">
+    <div class="icono-valor">🎯</div>
+    <h3>Misión</h3>
+    <p>
+      En EducaPeru Institute, nuestra misión es ofrecer soluciones integrales en formación, asesoría digital y posicionamiento estratégico. Nos enfocamos en empoderar a profesionales, emprendedores y empresas peruanas mediante programas personalizados de alta calidad, herramientas tecnológicas modernas y un enfoque 100% práctico y enfocado a resultados. Nuestra prioridad es el crecimiento sostenido de nuestros clientes a través del conocimiento y la innovación.
+    </p>
+  </div>
+  <div class="valor-card">
+    <div class="icono-valor">🚀</div>
+    <h3>Visión</h3>
+    <p>
+      Aspiramos a ser la empresa líder en transformación digital y capacitación profesional del Perú, destacando por nuestra excelencia, cercanía con el cliente y compromiso con la innovación. Visualizamos un futuro donde cada empresa, sin importar su tamaño, tenga acceso a herramientas de marketing, asesoría estratégica y formación que la lleven a alcanzar su máximo potencial en el mundo digital.
+    </p>
+  </div>
+</section>
+
+<!-- SECCIÓN: ¿QUIÉNES SOMOS? -->
+<section class="quienes-somos fade-in-section" id="quienes">
+  <div class="quienes-contenido">
+    <div class="quienes-texto">
+      <h2>¿Quiénes Somos?</h2>
+      <p>En EducaPeru Institute creemos en el poder del aprendizaje, la innovación y la estrategia para transformar realidades. Nacimos con la convicción de que cada profesional, emprendedor y empresa en el Perú merece acceso a herramientas modernas de formación, posicionamiento digital y desarrollo organizacional.
+        </p>
+      <a href="assets/brochure-educaperu.pdf" class="btn-descargar" download>Descargar Brochure</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN: VENTAJAS DE EDUCAPERU -->
+<section class="ventajas-educaperu fade-in-section" id="ventajas">
+  <h2>Ventajas de Elegir EducaPeru</h2>
+  <div class="ventajas-grid">
+    <div class="ventaja-item">
+      <img src="https://www.tusecretariavirtual.net/wp-content/uploads/2020/05/images.jpeg" alt="Atención personalizada">
+      <h3>Atención Personalizada</h3>
+      <p>Nos enfocamos en cada cliente con soluciones únicas según sus objetivos y necesidades.</p>
+    </div>
+    <div class="ventaja-item">
+      <img src="https://st2.depositphotos.com/1031343/8275/v/450/depositphotos_82755774-stock-illustration-expert-certified-stamp.jpg" alt="Expertos certificados">
+      <h3>Expertos Certificados</h3>
+      <p>Contamos con un equipo multidisciplinario de especialistas en sus áreas.</p>
+    </div>
+    <div class="ventaja-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRihd4ZOwycTDbPAIdtaUcQUexpf1Jl_J1VXQ&s" alt="Resultados Medibles">
+      <h3>Resultados Medibles</h3>
+      <p>Implementamos estrategias con impacto tangible y seguimiento constante.</p>
+    </div>
+    <div class="ventaja-item">
+      <img src="https://ambartlab.com.ar/wp-content/uploads/innovacion-tecnologica-en-la-produccion-una-guia-para-optimizar-tus-procesos.jpg" alt="Innovación constante">
+      <h3>Innovación Constante</h3>
+      <p>Actualizamos nuestras metodologías con las últimas tendencias tecnológicas y de mercado.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="valores-parallax" id="valores">
+  <div class="overlay"></div>
+  <div class="valores-content">
+    <h2>Nuestros Valores</h2>
+    <div class="valores-grid">
+      <div class="valor-item zoom-in">
+        <div class="valor-icono">🧠</div>
+        <h3>Innovación</h3>
+        <p>Siempre buscamos nuevas formas de generar impacto positivo con creatividad y tecnología.</p>
+      </div>
+      <div class="valor-item zoom-in">
+        <div class="valor-icono">🤝</div>
+        <h3>Compromiso</h3>
+        <p>Nos involucramos con cada cliente como si fuera nuestro único proyecto.</p>
+      </div>
+      <div class="valor-item zoom-in">
+        <div class="valor-icono">🏆</div>
+        <h3>Excelencia</h3>
+        <p>Nos esforzamos por entregar resultados de alto nivel en cada servicio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <h2 class="servicios-titulo">Nuestros Principales Servicios</h2>
+  <div class="servicios-contenedor">
+    <div class="servicio-card scroll-fade">
+      <div class="icono-servicio">💼</div>
+      <h3>Asesoría Empresarial</h3>
+      <p>Impulsamos el crecimiento de tu negocio con estrategias personalizadas y soluciones efectivas.</p>
+    </div>
+    <div class="servicio-card scroll-fade">
+      <div class="icono-servicio">📈</div>
+      <h3>Marketing Digital</h3>
+      <p>Diseñamos campañas enfocadas en resultados para atraer, convertir y fidelizar clientes online.</p>
+    </div>
+    <div class="servicio-card scroll-fade">
+      <div class="icono-servicio">🎓</div>
+      <h3>Capacitación Profesional</h3>
+      <p>Ofrecemos cursos prácticos para potenciar habilidades en gestión, tecnología y comunicación.</p>
+    </div>
+  </div>
+</section>
+
+<section class="elegirnos" id="elegirnos">
+  <div class="elegirnos-contenedor">
+    <div class="elegirnos-video">
+      <video autoplay muted loop playsinline>
+        <source src="assets/WhatsApp Video 2025-03-20 at 11.40.00 AM.mp4" type="video/mp4" />
+        Tu navegador no soporta videos.
+      </video>
+    </div>
+    <div class="elegirnos-texto">
+      <h2>¿Por qué elegirnos?</h2>
+      <p id="texto-destacado">
+        Brindamos soluciones personalizadas y enfocadas en resultados reales para tu crecimiento profesional.
+      </p>
+      <div class="elegirnos-botones">
+        <span class="boton-cambio active" data-index="0"></span>
+        <span class="boton-cambio" data-index="1"></span>
+        <span class="boton-cambio" data-index="2"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+
+<footer class="main-footer">
+  <div class="footer-container">
+    
+    <div class="footer-brand">
+      <div class="logo-text">
+        <img src="./assets/logo.png" alt="Logo EducaPeru" class="footer-logo" />
+        <h2>EducaPeru Institute</h2>
+      </div>
+      <p>Formamos, impulsamos y conectamos tu marca con el éxito.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Servicios</h3>
+      <ul>
+        <li><a href="./Gestion.html">Gestión Empresarial</a></li>
+        <li><a href="./capacitacion.html">Capacitación Profesional</a></li>
+        <li><a href="./marketing.html">Marketing Digital</a></li>
+        <li><a href="./MarcaPersonal.html">Marca Personal</a></li>
+        <li><a href="./terciarizacion.html">Tercerización Estratégica</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contáctanos</h3>
+      <p><i class="fas fa-map-marker-alt"></i> avenida Río Grande 312 , Urbanización la Esperanza, Pueblo Libre, Lima</p>
+      <p><i class="fas fa-envelope"></i> informes@educainstitute.edu.pe</p>
+      <p><i class="fas fa-phone-alt"></i> +51 995 619 930</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+        <a  href="https://www.facebook.com/share/1Y71GSmowZ/"  target="_blank" ><i  class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/educaperuinstitute?igsh=YzljYTk1ODg3Zg=="  target="_blank" ><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/educaperu-institute-1a6aa0345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"  target="_blank" ></i></a>
+        <a href="https://www.tiktok.com/@educaperu.institu?_t=ZM-8vpyn2ekb9p&_r=1"  target="_blank" ><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 EducaPeru Institute. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/pop_ap.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="js/btn-wsap.js"></script>
+</body>
+</html>
